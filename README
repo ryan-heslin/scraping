@@ -1,0 +1,15 @@
+This repository contains a few scripts I wrote that use the Selenium module
+for webscraping. formfiller.py contains code for creating FormFiller objects 
+that configure Selenium to send specified text to forms on a selected website;
+form_filelr_driver.py defines a command-line interface for creating such
+objects; and clipboard2pastebin.py is a simple utility to generate Pastebin
+links to input text.
+
+Usage Notes
+
+Once created, a FormFiller object may be modified using the add, remove,
+clear, and update methods.n the Python console. When creating FormFiller objects on the command
+line, note that the storage argument takes a relative path to the intended
+shelve storage file from Python's working directory. If the object appears not
+to have been saved to the correct file, a working directory issue is probably
+the reason.
