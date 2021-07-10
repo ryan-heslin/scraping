@@ -10,7 +10,6 @@ import os
 import sys
 import shelve
 
-
 class FormFiller:
 
     def __init__(self, url, submit, *di_args, **kwargs):
@@ -47,7 +46,7 @@ class FormFiller:
         
     def __repr__(self):
         """
-        If slectors contains 1 or more values, prints a formatted table with key-value
+        If selectors contains 1 or more values, prints a formatted table with key-value
         pairs. If none are set, prints a notice saying so isntead. Either way,
         prints value of URL and submit selector
 

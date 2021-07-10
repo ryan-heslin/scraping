@@ -1,4 +1,4 @@
-#!/C/Users/heslinr1/Documents/Software/Python/Spyder/python.exe
+
 # -*- coding: utf-8 -*-
 """
 Created on Tue Jul  6 20:16:53 2021

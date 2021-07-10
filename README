@@ -6,10 +6,14 @@ objects; and clipboard2pastebin.py is a simple utility to generate Pastebin
 links to input text.
 
 Usage Notes
-
+
 Once created, a FormFiller object may be modified using the add, remove,
 clear, and update methods.n the Python console. When creating FormFiller objects on the command
 line, note that the storage argument takes a relative path to the intended
 shelve storage file from Python's working directory. If the object appears not
 to have been saved to the correct file, a working directory issue is probably
 the reason.
+
+clipboard2pastebin expects the environment variable WEBDRIVER to be set to the
+path of your installation of Webdriver, and FormFiller is easier to use if so
+configured.

@@ -1,4 +1,4 @@
-#!/C/Users/heslinr1/Documents/Software/Python/Spyder/python.exe
+
 # -*- coding: utf-8 -*-
 """
 Created on Thu Jun 10 14:16:34 2021
@@ -13,6 +13,7 @@ from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
+import os
 import sys
 import pyperclip
 
@@ -26,7 +27,7 @@ else:
 url = "https://www.pastebin.com"
 css = "#postform-text"
 
-browser = webdriver.Firefox(executable_path = r"C:\Users\heslinr1\geckodriver\geckodriver.exe")
+browser = webdriver.Firefox(executable_path = os.environ["WEBDRIVER"])
 browser.get(url)
 browser.find_element_by_css_selector(css).send_keys(text)
 
